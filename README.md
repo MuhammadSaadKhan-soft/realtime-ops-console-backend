@@ -237,5 +237,5 @@ Insert-only by design. Sequelize hooks on `AuditLog` throw on any `update` or `d
 
 ### Scaling Bottlenecks
 - **Presence map** is in-process memory — won't work across multiple Node processes. Replace with Redis pub/sub for horizontal scaling.
-- **File uploads** stream directly to S3 via multer-s3, keeping the Node process out of the data path.
+- **File uploads** stream directly to cloudinary via multer-s3, keeping the Node process out of the data path.
 - **Search** uses DB-native tsvector — works well up to tens of millions of rows. Beyond that, move to Elasticsearch.
