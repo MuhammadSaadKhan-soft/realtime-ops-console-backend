@@ -1,0 +1,317 @@
+[2026-04-11 03:00:56] ERROR: column "createdAt" does not exist — POST /api/auth/login column "createdAt" does not exist
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async User.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async User.findOne (D:\backend\node_modules\sequelize\lib\model.js:1240:12)
+    at async login (D:\backend\controllers\authController.js:50:18)
+[2026-04-11 03:00:59] ERROR: column "createdAt" does not exist — POST /api/auth/login column "createdAt" does not exist
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async User.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async User.findOne (D:\backend\node_modules\sequelize\lib\model.js:1240:12)
+    at async login (D:\backend\controllers\authController.js:50:18)
+[2026-04-11 03:04:23] ERROR: Invalid email or password. — POST /api/auth/login Invalid email or password.
+Error: Invalid email or password.
+    at createError (D:\backend\middlewares\errorHandler.js:42:15)
+    at login (D:\backend\controllers\authController.js:57:19)
+[2026-04-11 03:05:20] ERROR: column organization.createdAt does not exist — GET /api/orgs column organization.createdAt does not exist
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async OrgMember.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async getMyOrgs (D:\backend\controllers\orgController.js:52:25)
+[2026-04-11 03:05:29] ERROR: column organization.createdAt does not exist — GET /api/orgs column organization.createdAt does not exist
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async OrgMember.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async getMyOrgs (D:\backend\controllers\orgController.js:52:25)
+[2026-04-11 03:06:59] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 03:09:43] ERROR: Invalid email or password. — POST /api/auth/login Invalid email or password.
+Error: Invalid email or password.
+    at createError (D:\backend\middlewares\errorHandler.js:42:15)
+    at login (D:\backend\controllers\authController.js:57:19)
+[2026-04-11 03:13:22] ERROR: Failed to send invite email to saadhussaini678@gmail.com: Invalid login: 535 5.7.0 Invalid credentials
+[2026-04-11 03:13:33] ERROR: This invite is for a different email address. — POST /api/orgs/invites/1b9c44d5c7e247b5bd32681b7f959a3d/accept This invite is for a different email address.
+Error: This invite is for a different email address.
+    at createError (D:\backend\middlewares\errorHandler.js:42:15)
+    at acceptInvite (D:\backend\controllers\orgController.js:258:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 05:24:36] ERROR: Invalid transition from 'investigating' to 'investigating' — PATCH /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets/d3d27d39-1f39-4ede-9674-c507d87e7e79/status Invalid transition from 'investigating' to 'investigating'
+Error: Invalid transition from 'investigating' to 'investigating'
+    at createError (D:\backend\middlewares\errorHandler.js:28:15)
+    at changeTicketStatus (D:\backend\controllers\ticketController.js:273:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 05:28:33] ERROR: Invalid transition from 'investigating' to 'investigating' — PATCH /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets/20fc5363-bdb7-4767-a5a3-999f1194c331/status Invalid transition from 'investigating' to 'investigating'
+Error: Invalid transition from 'investigating' to 'investigating'
+    at createError (D:\backend\middlewares\errorHandler.js:28:15)
+    at changeTicketStatus (D:\backend\controllers\ticketController.js:273:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 09:45:28] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 09:45:38] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 09:45:54] ERROR: Invalid email or password. — POST /api/auth/login Invalid email or password.
+Error: Invalid email or password.
+    at createError (D:\backend\middlewares\errorHandler.js:27:15)
+    at login (D:\backend\controllers\authController.js:38:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 09:46:23] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 09:47:46] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 09:48:05] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 09:48:09] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 09:48:26] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 09:49:46] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 09:50:53] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 09:55:29] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 09:57:42] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 09:57:58] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 10:00:03] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 10:00:20] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:72:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 10:10:34] ERROR: Cannot read properties of undefined (reading 'toISOString') — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets?limit=25 Cannot read properties of undefined (reading 'toISOString')
+TypeError: Cannot read properties of undefined (reading 'toISOString')
+    at getTickets (D:\backend\controllers\ticketController.js:74:60)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 10:16:06] ERROR: No files uploaded. — POST /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets/d3d27d39-1f39-4ede-9674-c507d87e7e79/attachments No files uploaded.
+Error: No files uploaded.
+    at createError (D:\backend\middlewares\errorHandler.js:27:15)
+    at uploadAttachments (D:\backend\controllers\attachmentController.js:13:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 10:21:10] ERROR: No files uploaded. — POST /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets/d3d27d39-1f39-4ede-9674-c507d87e7e79/attachments No files uploaded.
+Error: No files uploaded.
+    at createError (D:\backend\middlewares\errorHandler.js:27:15)
+    at uploadAttachments (D:\backend\controllers\attachmentController.js:13:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 10:27:18] ERROR: No files uploaded. — POST /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets/d3d27d39-1f39-4ede-9674-c507d87e7e79/attachments No files uploaded.
+Error: No files uploaded.
+    at createError (D:\backend\middlewares\errorHandler.js:27:15)
+    at uploadAttachments (D:\backend\controllers\attachmentController.js:13:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-11 10:32:18] ERROR: Must supply api_key — POST /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets/d3d27d39-1f39-4ede-9674-c507d87e7e79/attachments Must supply api_key
+Error: Must supply api_key
+    at ensureOption (D:\backend\node_modules\cloudinary\lib\utils\ensureOption.js:19:13)
+    at Object.sign_request (D:\backend\node_modules\cloudinary\lib\utils\index.js:1154:16)
+    at Object.process_request_params (D:\backend\node_modules\cloudinary\lib\utils\index.js:1206:22)
+    at call_api (D:\backend\node_modules\cloudinary\lib\uploader.js:488:18)
+    at Object.upload (D:\backend\node_modules\cloudinary\lib\uploader.js:55:10)
+    at Object.upload_stream (D:\backend\node_modules\cloudinary\lib\uploader.js:42:18)
+    at Object.upload_stream (D:\backend\node_modules\cloudinary\lib\utils\index.js:1405:21)
+    at D:\backend\node_modules\multer-storage-cloudinary\lib\index.js:128:52
+    at new Promise (<anonymous>)
+    at CloudinaryStorage.upload (D:\backend\node_modules\multer-storage-cloudinary\lib\index.js:127:16)
+[2026-04-11 10:37:20] ERROR: Must supply api_key — POST /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets/d3d27d39-1f39-4ede-9674-c507d87e7e79/attachments Must supply api_key
+Error: Must supply api_key
+    at ensureOption (D:\backend\node_modules\cloudinary\lib\utils\ensureOption.js:19:13)
+    at Object.sign_request (D:\backend\node_modules\cloudinary\lib\utils\index.js:1154:16)
+    at Object.process_request_params (D:\backend\node_modules\cloudinary\lib\utils\index.js:1206:22)
+    at call_api (D:\backend\node_modules\cloudinary\lib\uploader.js:488:18)
+    at Object.upload (D:\backend\node_modules\cloudinary\lib\uploader.js:55:10)
+    at Object.upload_stream (D:\backend\node_modules\cloudinary\lib\uploader.js:42:18)
+    at Object.upload_stream (D:\backend\node_modules\cloudinary\lib\utils\index.js:1405:21)
+    at D:\backend\node_modules\multer-storage-cloudinary\lib\index.js:128:52
+    at new Promise (<anonymous>)
+    at CloudinaryStorage.upload (D:\backend\node_modules\multer-storage-cloudinary\lib\index.js:127:16)
+[2026-04-11 11:31:55] ERROR: invalid input syntax for type uuid: "undefined" — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets/7819fe55-7120-4a7d-840f-7f8af38c15f4/attachments/undefined/url invalid input syntax for type uuid: "undefined"
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Attachment.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async Attachment.findOne (D:\backend\node_modules\sequelize\lib\model.js:1240:12)
+    at async getSignedDownloadUrl (D:\backend\controllers\attachmentController.js:51:24)
+[2026-04-11 11:31:58] ERROR: invalid input syntax for type uuid: "undefined" — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets/7819fe55-7120-4a7d-840f-7f8af38c15f4/attachments/undefined/url invalid input syntax for type uuid: "undefined"
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async Attachment.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async Attachment.findOne (D:\backend\node_modules\sequelize\lib\model.js:1240:12)
+    at async getSignedDownloadUrl (D:\backend\controllers\attachmentController.js:51:24)
+[2026-04-11 11:47:47] ERROR: File type application/x-zip-compressed is not allowed. — POST /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/tickets/d3d27d39-1f39-4ede-9674-c507d87e7e79/attachments File type application/x-zip-compressed is not allowed.
+Error: File type application/x-zip-compressed is not allowed.
+    at fileFilter (D:\backend\middlewares\upload.js:32:8)
+    at wrappedFileFilter (D:\backend\node_modules\multer\index.js:44:7)
+    at Multipart.<anonymous> (D:\backend\node_modules\multer\lib\make-middleware.js:109:7)
+    at Multipart.emit (node:events:508:20)
+    at HeaderParser.cb (D:\backend\node_modules\busboy\lib\types\multipart.js:358:14)
+    at HeaderParser.push (D:\backend\node_modules\busboy\lib\types\multipart.js:162:20)
+    at SBMH.ssCb [as _cb] (D:\backend\node_modules\busboy\lib\types\multipart.js:394:37)
+    at feed (D:\backend\node_modules\streamsearch\lib\sbmh.js:248:10)
+    at SBMH.push (D:\backend\node_modules\streamsearch\lib\sbmh.js:104:16)
+    at Multipart._write (D:\backend\node_modules\busboy\lib\types\multipart.js:567:19)
+[2026-04-11 12:34:59] ERROR: invalid input syntax for type uuid: "a" — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/audit-logs?page=1&limit=50&entity_type=&entity_id=&actor_id=a&action=&date_from=&date_to= invalid input syntax for type uuid: "a"
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async AuditLog.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async getAuditLogs (D:\backend\controllers\auditController.js:22:18)
+[2026-04-11 12:35:01] ERROR: invalid input syntax for type uuid: "al" — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/audit-logs?page=1&limit=50&entity_type=&entity_id=&actor_id=al&action=&date_from=&date_to= invalid input syntax for type uuid: "al"
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async AuditLog.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async getAuditLogs (D:\backend\controllers\auditController.js:22:18)
+[2026-04-11 12:35:01] ERROR: invalid input syntax for type uuid: "ali" — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/audit-logs?page=1&limit=50&entity_type=&entity_id=&actor_id=ali&action=&date_from=&date_to= invalid input syntax for type uuid: "ali"
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async AuditLog.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async getAuditLogs (D:\backend\controllers\auditController.js:22:18)
+[2026-04-11 12:35:02] ERROR: invalid input syntax for type uuid: "alic" — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/audit-logs?page=1&limit=50&entity_type=&entity_id=&actor_id=alic&action=&date_from=&date_to= invalid input syntax for type uuid: "alic"
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async AuditLog.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async getAuditLogs (D:\backend\controllers\auditController.js:22:18)
+[2026-04-11 12:35:02] ERROR: invalid input syntax for type uuid: "alice" — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/audit-logs?page=1&limit=50&entity_type=&entity_id=&actor_id=alice&action=&date_from=&date_to= invalid input syntax for type uuid: "alice"
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async AuditLog.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async getAuditLogs (D:\backend\controllers\auditController.js:22:18)
+[2026-04-11 12:35:07] ERROR: invalid input syntax for type uuid: "alic" — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/audit-logs?page=1&limit=50&entity_type=&entity_id=&actor_id=alic&action=&date_from=&date_to= invalid input syntax for type uuid: "alic"
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async AuditLog.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async getAuditLogs (D:\backend\controllers\auditController.js:22:18)
+[2026-04-11 12:35:07] ERROR: invalid input syntax for type uuid: "ali" — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/audit-logs?page=1&limit=50&entity_type=&entity_id=&actor_id=ali&action=&date_from=&date_to= invalid input syntax for type uuid: "ali"
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async AuditLog.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async getAuditLogs (D:\backend\controllers\auditController.js:22:18)
+[2026-04-11 12:35:08] ERROR: invalid input syntax for type uuid: "al" — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/audit-logs?page=1&limit=50&entity_type=&entity_id=&actor_id=al&action=&date_from=&date_to= invalid input syntax for type uuid: "al"
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async AuditLog.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async getAuditLogs (D:\backend\controllers\auditController.js:22:18)
+[2026-04-11 12:35:08] ERROR: invalid input syntax for type uuid: "a" — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/audit-logs?page=1&limit=50&entity_type=&entity_id=&actor_id=a&action=&date_from=&date_to= invalid input syntax for type uuid: "a"
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async AuditLog.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async getAuditLogs (D:\backend\controllers\auditController.js:22:18)
+[2026-04-11 12:41:13] ERROR: invalid input syntax for type uuid: "s" — GET /api/orgs/59981dc2-dd0a-4e2c-a650-1ede1e695c93/audit-logs?page=1&limit=50&entity_type=&entity_id=&actor_id=s&action=&date_from=&date_to= invalid input syntax for type uuid: "s"
+Error
+    at Query.run (D:\backend\node_modules\sequelize\lib\dialects\postgres\query.js:50:25)
+    at D:\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async PostgresQueryInterface.select (D:\backend\node_modules\sequelize\lib\dialects\abstract\query-interface.js:407:12)
+    at async AuditLog.findAll (D:\backend\node_modules\sequelize\lib\model.js:1140:21)
+    at async getAuditLogs (D:\backend\controllers\auditController.js:22:18)
+[2026-04-12 00:08:24] ERROR: Failed to send invite email to saadhussaini678@gmail.com: Invalid login: 535 5.7.0 Invalid credentials
+[2026-04-12 00:12:02] ERROR: Failed to send invite email to saadhussaini678@gmail.com: Invalid login: 535 5.7.0 Invalid credentials
+[2026-04-12 00:12:45] ERROR: Failed to send invite email to saadhussaini678@gmail.com: Invalid login: 535 5.7.0 Invalid credentials
+[2026-04-12 00:13:58] ERROR: Failed to send invite email to saadhussaini678@gmail.com: Invalid login: 535 5.7.0 Invalid credentials
+[2026-04-12 00:22:20] ERROR: Failed to send invite email to saadhussaini678@gmail.com: Invalid login: 535 5.7.0 Invalid credentials
+[2026-04-12 00:23:33] ERROR: Failed to send invite email to saadhussaini678@gmail.com: Invalid login: 535 5.7.0 Invalid credentials
+[2026-04-12 00:34:06] ERROR: This invite is for a different email address. — POST /api/orgs/invites/1c1053dfbf6b4eae8d019dd3e2e122ce/accept This invite is for a different email address.
+Error: This invite is for a different email address.
+    at createError (D:\backend\middlewares\errorHandler.js:25:15)
+    at acceptInvite (D:\backend\controllers\orgController.js:206:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-12 00:34:42] ERROR: This invite is for a different email address. — POST /api/orgs/invites/1c1053dfbf6b4eae8d019dd3e2e122ce/accept This invite is for a different email address.
+Error: This invite is for a different email address.
+    at createError (D:\backend\middlewares\errorHandler.js:25:15)
+    at acceptInvite (D:\backend\controllers\orgController.js:206:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-12 00:36:25] ERROR: This invite is for a different email address. — POST /api/orgs/invites/4af5b55eae22457593a57030a0103d05/accept This invite is for a different email address.
+Error: This invite is for a different email address.
+    at createError (D:\backend\middlewares\errorHandler.js:25:15)
+    at acceptInvite (D:\backend\controllers\orgController.js:206:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-12 00:41:44] ERROR: This invite is for a different email address. — POST /api/orgs/invites/3fbdcf19b6ac48e4a10ab94309e82611/accept This invite is for a different email address.
+Error: This invite is for a different email address.
+    at createError (D:\backend\middlewares\errorHandler.js:25:15)
+    at acceptInvite (D:\backend\controllers\orgController.js:206:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-12 00:41:55] ERROR: This invite is for a different email address. — POST /api/orgs/invites/3fbdcf19b6ac48e4a10ab94309e82611/accept This invite is for a different email address.
+Error: This invite is for a different email address.
+    at createError (D:\backend\middlewares\errorHandler.js:25:15)
+    at acceptInvite (D:\backend\controllers\orgController.js:206:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-12 00:41:58] ERROR: This invite is for a different email address. — POST /api/orgs/invites/3fbdcf19b6ac48e4a10ab94309e82611/accept This invite is for a different email address.
+Error: This invite is for a different email address.
+    at createError (D:\backend\middlewares\errorHandler.js:25:15)
+    at acceptInvite (D:\backend\controllers\orgController.js:206:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+[2026-04-12 00:44:01] ERROR: This invite is for a different email address. — POST /api/orgs/invites/3fbdcf19b6ac48e4a10ab94309e82611/accept This invite is for a different email address.
+Error: This invite is for a different email address.
+    at createError (D:\backend\middlewares\errorHandler.js:25:15)
+    at acceptInvite (D:\backend\controllers\orgController.js:206:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
