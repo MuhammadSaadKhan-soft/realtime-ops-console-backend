@@ -13,7 +13,7 @@ backend/
 │   ├── database.js      # Sequelize instance
 │   ├── jwt.js           # Sign / verify JWT tokens
 │   ├── logger.js        # Winston logger
-│   └── s3.js            # AWS S3 client
+│   └── cloudinary.js            # AWS S3 client
 │
 ├── controllers/
 │   ├── authController.js        # Register, login, profile
@@ -28,7 +28,7 @@ backend/
 │   ├── orgAccess.js      # Role-based org membership check
 │   ├── errorHandler.js   # Global error handler + createError helper
 │   ├── rateLimiter.js    # API / auth / upload rate limits
-│   └── upload.js         # Multer-S3 config
+│   └── upload.js         # Multer-cloudinary config
 │
 ├── models/
 │   ├── index.js          # Load all models + define associations
