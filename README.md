@@ -76,7 +76,7 @@ backend/
 ### 1. Prerequisites
 - Node.js 18+
 - PostgreSQL 14+ running locally (or connection string to a hosted DB)
-- AWS S3 bucket (or MinIO for local S3)
+- Cloudinary for uploading
 
 ### 2. Install dependencies
 ```bash
