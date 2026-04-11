@@ -1,6 +1,6 @@
 # Ops Console — Backend
 
-Multi-Tenant Realtime Ops Console built with **Node.js + Express + Sequelize + PostgreSQL + Socket.io**.
+Multi-Tenant Realtime Ops Console built with **Node.js + Express + Sequelize + PostgreSQL + Socket.io + Cloudinary**.
 
 ---
 
