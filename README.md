@@ -216,26 +216,3 @@ socket.emit("join_org", { orgId: "<org-uuid>" });
 | dave@demo.com | Password123! | Viewer |
 | eve@demo.com | Password123! | Member |
 
----
-
-## Engineering Notes
-
-### Multi-Tenancy
-Every table that holds org-specific data has an `org_id` column. Every query filters by `org_id`. The `requireOrgRole` middleware verifies membership before any handler runs, so controllers never need to re-check access.
-
-### Realtime Security
-Socket.io connections require a valid JWT in `socket.handshake.auth.token`. The `join_org` event verifies the user's org membership in the DB before admitting them to the room. Rooms are named `org:<orgId>` — a user in one org cannot receive events from another.
-
-### Full-Text Search
-PostgreSQL `tsvector` with a GIN index powers search. A DB trigger keeps `search_vector` updated on every insert/update. Queries use `plainto_tsquery` which handles multi-word phrases safely without SQL injection risk.
-
-### Cursor Pagination
-Cursor = base64-encoded ISO timestamp of the last item. Cheaper than `OFFSET` at scale (no full table scan to skip rows). Works correctly with the `created_at DESC` sort.
-
-### Audit Logs
-Insert-only by design. Sequelize hooks on `AuditLog` throw on any `update` or `destroy` call. The `auditService.log()` helper wraps every write in a try/catch so a logging failure never breaks the main request.
-
-### Scaling Bottlenecks
-- **Presence map** is in-process memory — won't work across multiple Node processes. Replace with Redis pub/sub for horizontal scaling.
-- **File uploads** stream directly to cloudinary via multer-s3, keeping the Node process out of the data path.
-- **Search** uses DB-native tsvector — works well up to tens of millions of rows. Beyond that, move to Elasticsearch.
